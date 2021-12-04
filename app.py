@@ -5,8 +5,10 @@ from google.cloud import dialogflow
 from google.api_core.exceptions import InvalidArgument
 import requests
 from werkzeug.datastructures import LanguageAccept
+import google.cloud.dialogflow_v2 as dialogflow
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'private_key.json'
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "private_key.json"
 
 DIALOGFLOW_PROJECT_ID = 'chatbot-j-xqv9'
 DIALOGFLOW_LANGUAGE_CODE = 'en'
