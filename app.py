@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import request, jsonify
 import os
-import dialogflow
+from google.cloud import dialogflow
 from google.api_core.exceptions import InvalidArgument
 import requests
 
